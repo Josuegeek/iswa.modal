@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iswa.modal.example</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="../iswa.modal/iswa.modal.css">
+</head>
+
+<body>
+
+    <div class="iswa--modal">
+        <div class="detail-container">
+            <div class="profile-row">
+                <img src="./myProfile.jpg" alt="my profile">
+                <span>Mr. <b>ISWA</b></span>
+            </div>
+            <p>I am a passionate and creative Mobile and Web developer! :) 
+                <br>I like music, I play the piano and I also like playing video games
+            </p>
+            <button id="btn-close-more">Click to close this modal</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="profile-container">
+            <img src="./myProfile.jpg" alt="my profile" class="profile-img">
+            <span>Hi! I'm <b>ISWA</b></span>
+            <button id="btn-show-more">Click here to show more..</button>
+        </div>
+    </div>
+
+    <script src="../iswa.modal/iswa.modal.js"></script>
+    <script>
+        document.getElementById("btn-show-more").addEventListener("click", (event)=>{
+            showIswaModal(1);
+        });
+        document.getElementById("btn-close-more").addEventListener("click", (event)=>{
+            hideIswaModal(1);
+        });
+    </script>
+</body>
+
+</html>
